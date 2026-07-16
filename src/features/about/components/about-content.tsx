@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { resumeData } from "@/data/resume";
-import { GitHubActivity } from "@/components/organisms/github-activity";
-import { LocationGlobe } from "@/components/organisms/location-globe";
+import { GitHubActivity } from "@/features/about/components/github-activity";
+import { LocationGlobe } from "@/features/about/components/location-globe";
 import { ResumeDownloadModal } from "@/components/molecules/resume-download-modal";
 import Image from "next/image";
 import {

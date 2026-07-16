@@ -1,7 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import { MarketingLayout } from "@/components/templates/marketing-layout";
-import { TimelineContent } from "@/components/organisms/timeline-content";
+import { TimelineContent } from "@/features/timeline";
 
 export async function generateMetadata({
   params,

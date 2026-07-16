@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { MarketingLayout } from "@/components/templates/marketing-layout";
-import { ProjectDetailContent } from "@/components/organisms/project-detail-content";
+import { ProjectDetailContent } from "@/features/projects";
 import { getProjectBySlug, projects } from "@/data/projects";
 
 export async function generateStaticParams() {

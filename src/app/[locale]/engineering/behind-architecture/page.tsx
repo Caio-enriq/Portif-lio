@@ -1,7 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import { MarketingLayout } from "@/components/templates/marketing-layout";
-import { EngineeringBehindArchitectureContent } from "@/components/organisms/engineering-behind-architecture-content";
+import { EngineeringBehindArchitectureContent } from "@/features/engineering";
 
 export async function generateMetadata({
   params,

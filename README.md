@@ -1,6 +1,6 @@
-# Portfolio React - Caio Enrique
+# Portfólio - Caio Enrique
 
-[![CI](https://github.com/Caioe/portfolio-react/actions/workflows/ci.yml/badge.svg)](https://github.com/Caioe/portfolio-react/actions/workflows/ci.yml)
+[![CI](https://github.com/Caio-enriq/Portif-lio/actions/workflows/ci.yml/badge.svg)](https://github.com/Caio-enriq/Portif-lio/actions/workflows/ci.yml)
 
 Portfolio profissional de Caio Enrique — Full-Stack Developer & Enterprise Automation.
 
@@ -50,20 +50,30 @@ npm run test:e2e     # Playwright E2E tests
 src/
 ├── app/
 │   └── [locale]/
-│       ├── layout.tsx          # Root layout with providers
-│       ├── page.tsx            # Home page
-│       ├── sobre/page.tsx      # About page
-│       ├── projetos/           # Projects pages
-│       ├── curriculo/page.tsx  # Resume page
-│       └── contato/page.tsx    # Contact page
+│       ├── layout.tsx          # Locale layout and metadata
+│       ├── page.tsx            # Home route
+│       ├── sobre/              # About route
+│       ├── projetos/           # Projects routes
+│       ├── curriculo/          # Resume route
+│       ├── timeline/           # Journey route
+│       ├── engineering/        # Engineering routes
+│       └── contato/            # Contact route
 ├── components/
-│   ├── atoms/                  # Atomic components
-│   ├── molecules/              # Composite components
-│   ├── organisms/              # Complex components
-│   ├── templates/              # Page layouts
-│   ├── ui/                     # shadcn/ui components
-│   └── seo/                    # SEO components
-├── data/                       # Data files
+│   ├── atoms/                  # Small shared UI primitives
+│   ├── molecules/              # Reusable composed components
+│   ├── organisms/              # Global layout organisms
+│   ├── templates/              # Page/layout shells
+│   ├── ui/                     # Base UI system components
+│   └── seo/                    # Structured data components
+├── features/
+│   ├── home/                   # Home page sections
+│   ├── about/                  # About page experience
+│   ├── projects/               # Project listing and detail UI
+│   ├── engineering/            # Engineering pages
+│   ├── resume/                 # Resume page
+│   ├── timeline/               # Journey timeline
+│   └── contact/                # Contact page
+├── data/                       # Typed portfolio, project and resume data
 ├── i18n/                       # Internationalization
 ├── lib/                        # Utilities
 ├── messages/                   # Translation files

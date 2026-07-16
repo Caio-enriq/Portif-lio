@@ -1,0 +1,9 @@
+export { ContactCTA } from "./components/contact-cta";
+export { HeroSection } from "./components/hero-section";
+export { HomeAbout } from "./components/home-about";
+export { HomeDifferentials } from "./components/home-differentials";
+export { HomeFeaturedProject } from "./components/home-featured-project";
+export { HomePhilosophy } from "./components/home-philosophy";
+export { HomePositioning } from "./components/home-positioning";
+export { HomeSpecialties } from "./components/home-specialties";
+export { HomeTimeline } from "./components/home-timeline";
