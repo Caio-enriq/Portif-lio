@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="taskflow-bg" x1="70" y1="30" x2="730" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1324"/>
+      <stop offset="1" stop-color="#141a2f"/>
+    </linearGradient>
+    <linearGradient id="taskflow-accent" x1="170" y1="130" x2="650" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60a5fa"/>
+      <stop offset=".5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="28" fill="url(#taskflow-bg)"/>
+  <circle cx="660" cy="98" r="134" fill="#818cf8" opacity=".08"/>
+  <rect x="78" y="70" width="644" height="304" rx="26" fill="#0b1220" fill-opacity=".82" stroke="#263856"/>
+  <rect x="112" y="110" width="160" height="222" rx="20" fill="#101b2d" stroke="#263856"/>
+  <rect x="320" y="110" width="160" height="222" rx="20" fill="#101b2d" stroke="#263856"/>
+  <rect x="528" y="110" width="160" height="222" rx="20" fill="#101b2d" stroke="#263856"/>
+  <text x="138" y="146" fill="#93c5fd" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">To do</text>
+  <text x="346" y="146" fill="#c4b5fd" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">Doing</text>
+  <text x="554" y="146" fill="#bbf7d0" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">Done</text>
+  <rect x="138" y="172" width="108" height="40" rx="12" fill="#172033"/>
+  <rect x="138" y="228" width="92" height="40" rx="12" fill="#172033"/>
+  <rect x="346" y="172" width="108" height="40" rx="12" fill="#172033"/>
+  <rect x="346" y="228" width="88" height="40" rx="12" fill="#172033"/>
+  <rect x="554" y="172" width="108" height="40" rx="12" fill="#172033"/>
+  <path d="M574 193l12 12 26-30" stroke="#34d399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="608" cy="270" r="35" fill="none" stroke="#1e293b" stroke-width="10"/>
+  <circle cx="608" cy="270" r="35" fill="none" stroke="url(#taskflow-accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="166 220" transform="rotate(-90 608 270)"/>
+  <rect x="332" y="294" width="136" height="16" rx="8" fill="url(#taskflow-accent)" opacity=".28"/>
+  <path d="M292 220h8M500 220h8" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M78 372h644" stroke="#263856"/>
+  <text x="78" y="402" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">TaskFlow</text>
+  <text x="538" y="402" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">JWT + Prisma + Docker workflow</text>
+</svg>

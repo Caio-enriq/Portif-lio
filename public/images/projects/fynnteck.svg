@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="fynnteck-bg" x1="80" y1="34" x2="720" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101522"/>
+      <stop offset="1" stop-color="#1d1a2d"/>
+    </linearGradient>
+    <linearGradient id="fynnteck-accent" x1="250" y1="80" x2="560" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fbbf24"/>
+      <stop offset=".52" stop-color="#fb7185"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="28" fill="url(#fynnteck-bg)"/>
+  <circle cx="174" cy="112" r="118" fill="#f59e0b" opacity=".08"/>
+  <circle cx="650" cy="346" r="156" fill="#fb7185" opacity=".08"/>
+
+  <rect x="112" y="114" width="236" height="238" rx="24" fill="#0f172a" fill-opacity=".78" stroke="#2a3448"/>
+  <text x="142" y="152" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700">Web overview</text>
+  <rect x="142" y="178" width="82" height="58" rx="14" fill="#172033"/>
+  <rect x="240" y="178" width="78" height="58" rx="14" fill="#172033"/>
+  <path d="M156 280C184 244 214 266 242 234C266 207 286 230 310 202" stroke="url(#fynnteck-accent)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M156 312h156" stroke="#2c374c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M156 312h96" stroke="#fbbf24" stroke-width="7" stroke-linecap="round"/>
+
+  <rect x="394" y="42" width="214" height="366" rx="34" fill="#0b1020" stroke="#334155" stroke-width="3"/>
+  <rect x="432" y="64" width="138" height="8" rx="4" fill="#1f2937"/>
+  <text x="430" y="116" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="12">balance</text>
+  <text x="430" y="149" fill="#fef3c7" font-family="Inter, system-ui, sans-serif" font-size="29" font-weight="800">R$ 4.280</text>
+  <rect x="430" y="176" width="142" height="86" rx="18" fill="#151f32"/>
+  <path d="M448 232C464 204 483 220 500 196C518 172 538 202 554 184" stroke="url(#fynnteck-accent)" stroke-width="4" stroke-linecap="round"/>
+  <rect x="430" y="284" width="64" height="58" rx="16" fill="#151f32"/>
+  <rect x="508" y="284" width="64" height="58" rx="16" fill="#151f32"/>
+  <circle cx="462" cy="313" r="15" fill="none" stroke="#fbbf24" stroke-width="6" stroke-dasharray="70 30"/>
+  <path d="M528 324h24M528 308h30" stroke="#fb7185" stroke-width="5" stroke-linecap="round"/>
+  <rect x="430" y="362" width="142" height="24" rx="12" fill="url(#fynnteck-accent)" opacity=".92"/>
+
+  <rect x="640" y="140" width="46" height="148" rx="23" fill="#111827" stroke="#334155"/>
+  <path d="M654 188h18M654 214h18M654 240h18" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <text x="112" y="392" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">Fynnteck Finance</text>
+  <text x="520" y="392" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">mobile-first spending insights</text>
+</svg>

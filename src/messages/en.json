@@ -1,0 +1,428 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "CV",
+    "contact": "Contact",
+    "engineering": "Engineering",
+    "timeline": "Journey",
+    "toggleLanguage": "Change language",
+    "toggleTheme": "Toggle theme",
+    "toggleMenu": "Open menu"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "home": "Go Home",
+    "back": "Go Back"
+  },
+  "hero": {
+    "nameLine": "Caio Enrique",
+    "availability": "Open to opportunities",
+    "kicker": "Backend · Automation · Applied AI",
+    "positioning": "Software Developer focused on backend, automation, and AI integration for real-world processes.",
+    "tagline": "Problem → Thinking → Architecture → Solution → Result.",
+    "proof": {
+      "lines": "production lines",
+      "platform": "document platform",
+      "global": "ready for global teams"
+    },
+    "cta": {
+      "projects": "View Projects",
+      "about": "About Me",
+      "resume": "Download CV"
+    }
+  },
+  "stats": {
+    "projects": "Completed projects",
+    "demos": "Live demos",
+    "semester": "Degree semester",
+    "lines": "Lines in production",
+    "techs": "Technologies used",
+    "llms": "LLM providers integrated"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Software Developer · SOSdocs/SERPRO · Computer Science @ UniCEUB",
+    "banner": "I solve enterprise problems with software engineering",
+    "story1": "Between 2018 and early 2021, I started exploring programming out of curiosity. Python, logic, and small scripts were my first contact with what existed behind the systems I used.",
+    "story2": "At Bunge (2023-2024), I saw firsthand how well-processed data transforms decisions. Since March 2026, at SOSdocs/SERPRO, I have been building solutions that automate processes that used to take hours.",
+    "story3": "I'm not a developer looking for a job — I'm an engineer who solves problems. Every project in my portfolio was born from a real need, not a tutorial.",
+    "aboutMe": "Identity",
+    "name": "Name",
+    "age": "Age",
+    "location": "Location",
+    "languages": "Languages",
+    "availability": "Availability",
+    "availabilityValue": "Internship & Junior Roles",
+    "education": "Education",
+    "experience": "Experience",
+    "softSkills": "Professional Competencies",
+    "communication": "Communication",
+    "teamwork": "Teamwork",
+    "organization": "Organization",
+    "problemSolving": "Problem solving",
+    "fastLearner": "Fast learner",
+    "analytical": "Analytical thinking",
+    "hardSkills": "Technical Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "devops": "DevOps",
+    "tools": "Tools",
+    "certifications": "Certifications",
+    "objectives": "Objectives",
+    "objectiveText": "To work as a Software Engineer at a globally recognized technology organization, solving complex problems with architecture, code, and automation.",
+    "downloadCv": "Download CV",
+    "currentWork": "SOSdocs/SERPRO — Software Developer",
+    "currentWorkDesc": "I develop and maintain a full-stack platform for corporate document lifecycle management. The hybrid architecture combines Python (FastAPI) and Node.js (Express), with more than 12,500 lines in production.",
+    "achievements": "Results",
+    "achievement1": "Monolithic B2B platform with a dual-stack backend for corporate data processing",
+    "achievement2": "Document upload and indexing automation via REST APIs with OAuth2/JWT",
+    "achievement3": "OpenAI API and Google Gemini integration for AI-powered document validation",
+    "achievement4": "Analytics dashboards with Python/Pandas and Chart.js visualization",
+    "previousExperience": "Previous Experience",
+    "stack": "Stack & Skills",
+    "goal": "Goal",
+    "identity": "Identity"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Each project is a real engineering case — problem, thinking, architecture, solution.",
+    "liveDemos": "Live demos — try them now",
+    "liveDemosDesc": "3 projects running directly in the browser, no installation needed",
+    "all": "All",
+    "viewAll": "View All on GitHub",
+    "viewDetails": "View full case",
+    "back": "Back",
+    "close": "Close",
+    "description": "The Problem",
+    "results": "Results",
+    "year": "Year",
+    "category": "Category",
+    "why": "The Problem",
+    "how": "How I Thought",
+    "tech": "Architecture & Stack",
+    "impact": "Result",
+    "problem": "The Problem",
+    "context": "Context",
+    "objective": "Objective",
+    "challenge": "Challenge",
+    "responsibility": "My Responsibility",
+    "architecture": "Architecture",
+    "flow": "Flow",
+    "modeling": "Modeling",
+    "decisions": "Engineering Decisions",
+    "tradeoffs": "Trade-offs",
+    "howIThought": "How I Thought",
+    "whatIDLearned": "What I Learned",
+    "whatIDChange": "What I'd Do Differently",
+    "nextSteps": "Next Steps",
+    "featured": "Featured Projects",
+    "portfolioLabel": "Portfolio",
+    "empty": "No projects found in this category.",
+    "githubTitle": "Want to see more?",
+    "githubDesc": "Explore all my projects on GitHub"
+  },
+  "resume": {
+    "title": "CV",
+    "download": "Download CV",
+    "objective": "What I'm Looking For",
+    "summary": "Summary",
+    "contact": "Contact",
+    "softSkills": "Professional Competencies",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Technical Skills",
+    "certifications": "Certifications",
+    "languages": "Languages",
+    "problemsSolved": "Problems I've Solved",
+    "specializations": "Specializations"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a problem that needs solving? Let's talk.",
+    "ctaTag": "Let's talk",
+    "location": "Brasília, DF",
+    "availability": "Availability",
+    "availabilityValue": "Available for internship and junior opportunities — on-site or remote",
+    "name": "Your name",
+    "email": "Your best email",
+    "message": "Describe the problem you need solved...",
+    "send": "Send message",
+    "resumeLabel": "View CV",
+    "sending": "Sending...",
+    "success": "Message sent!",
+    "error": "Something went wrong. Please try again.",
+    "kicker": "Get in touch",
+    "region": "Brazilian Federal District",
+    "emailResponse": "I usually reply within 24 hours",
+    "social": "Social links",
+    "profile": "Profile",
+    "quickTitle": "Want to work together?",
+    "quickDesc": "I'm available for freelance projects, collaborations, and job opportunities.",
+    "formTitle": "Send a message",
+    "formDesc": "Fill out the form and I'll get back to you as soon as possible."
+  },
+  "footer": {
+    "description": "Software Developer solving enterprise problems with code, architecture, and automation.",
+    "quickLinks": "Quick links",
+    "social": "Social",
+    "technologies": "Technologies",
+    "copyright": "All rights reserved.",
+    "built": "Built with",
+    "builtWith": "Python, React & software architecture",
+    "openTo": "Open to international opportunities"
+  },
+  "home": {
+    "about": {
+      "title": "Who I Am",
+      "tagline": "Software Developer focused on backend, automation, and applied AI",
+      "desc1": "I like turning manual, repetitive processes into clear, documented, sustainable systems. Every line of code needs a reason: reduce friction, create visibility, or remove operational work.",
+      "desc2": "At SOSdocs/SERPRO, I develop a platform for corporate document lifecycle management. In this portfolio, projects are presented as case studies: problem, architecture, decisions, and result.",
+      "cta": "Learn More"
+    },
+    "positioning": {
+      "title": "What I Do",
+      "line1": "I analyze the problem.",
+      "line2": "I design the architecture.",
+      "line3": "I build the solution.",
+      "line4": "I measure the result.",
+      "desc": "Software engineering isn't about technology — it's about making the right decisions. Every tool I choose, every pattern I adopt, every trade-off I accept has one goal: solve the problem as efficiently as possible."
+    },
+    "specialties": {
+      "title": "Specialties",
+      "platforms": {
+        "title": "Corporate Platforms",
+        "desc": "B2B systems, executive dashboards, APIs serving thousands of requests."
+      },
+      "automation": {
+        "title": "Intelligent Automation",
+        "desc": "ETL pipelines, automated workflows, integration between systems that don't talk to each other."
+      },
+      "ai": {
+        "title": "AI Applied to Business",
+        "desc": "OpenAI, Gemini, language models integrated into real company processes."
+      },
+      "data": {
+        "title": "Data Engineering",
+        "desc": "PostgreSQL, DuckDB, Pandas — clean, fast data ready for decision-making."
+      }
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "problem": {
+        "title": "Problem Before Code",
+        "desc": "I never start coding before fully understanding what I'm solving."
+      },
+      "architecture": {
+        "title": "Architecture Is Intentional",
+        "desc": "Every architecture decision has a reason. I don't adopt technologies because of trends."
+      },
+      "result": {
+        "title": "Result Is Measured",
+        "desc": "If you can't measure the impact, it's not worth building."
+      }
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "Real engineering cases — with problem, solution, and result.",
+      "viewAll": "View All Projects"
+    },
+    "featured": {
+      "title": "Featured Project",
+      "liveDemo": "Live demo",
+      "viewAll": "View all"
+    },
+    "differentials": {
+      "title": "Why work with me",
+      "points": [
+        "I solve real problems, not only academic exercises",
+        "I think in architecture before writing the first line",
+        "I've worked with real companies (SOSdocs/SERPRO, Bunge Fortune 500)",
+        "I bring range across backend, frontend, data, and automation"
+      ]
+    },
+    "timeline": {
+      "title": "Journey",
+      "pandemic": "Curiosity before and during the pandemic",
+      "bunge": "Bunge and corporate work",
+      "study": "Deep study",
+      "sosdocs": "SOSdocs"
+    }
+  },
+  "timeline": {
+    "title": "Journey",
+    "subtitle": "From early curiosity to building real software solutions",
+    "future": "A path shaped by restarts, focused study, and the drive to turn problems into useful systems.",
+    "phases": {
+      "pandemic": "Curiosity before and during the pandemic",
+      "pandemicDesc": "Between 2018 and early 2021, I started learning programming on my own. Python, print(), logic, and small scripts were my first contact with what existed behind the software I used.",
+      "decision": "Choosing technology",
+      "decisionDesc": "Near the end of high school, I realized my curiosity always came back to software. I did not know the exact path yet, but I knew I wanted to build systems.",
+      "firstCollege": "The first path and a course correction",
+      "firstCollegeDesc": "My first college experience was Software Engineering, but the environment did not match what I was looking for. I understood that my focus was building applications, APIs, architecture, and real solutions.",
+      "bunge": "Bunge and the corporate environment",
+      "bungeDesc": "Between 2023 and 2024, I had my first contact with the routine of a large company. I learned about responsibility, organization, professional communication, and teamwork.",
+      "deepStudy": "Restart and deep study",
+      "deepStudyDesc": "When I moved into Computer Science, I found a foundation that was closer to my goals. I spent a focused period studying React, Next.js, Python, Node.js, databases, Docker, Git, APIs, and AI.",
+      "sosdocs": "SOSdocs: real development work",
+      "sosdocsDesc": "In March 2026, I joined SOSdocs as a developer. I started building dashboards, web applications, API integrations, automations, and internal productivity tools.",
+      "international": "Next step: an international career",
+      "internationalDesc": "My goal is to build an international career in technology, focused on backend, full-stack, and applied AI. Ireland is the main destination I want to reach."
+    }
+  },
+  "engineering": {
+    "title": "Engineering",
+    "subtitle": "How I think, build, and evolve software.",
+    "stack": "Tech Stack",
+    "quality": "Quality & Process",
+    "testing": "Multi-layer Testing",
+    "ci": "CI/CD Pipeline",
+    "security": "Security & Headers",
+    "principles": {
+      "title": "Engineering Principles",
+      "subtitle": "Principles I follow from experience, not trend-chasing.",
+      "p1": {
+        "title": "Problem Before Solution",
+        "desc": "I never start coding before understanding the whole problem. I ask: what am I solving? For whom? What's the cost of not solving it?"
+      },
+      "p2": {
+        "title": "Architecture Is Intentional",
+        "desc": "Every architecture decision — module separation, framework choice, organization pattern — has a reason. I don't adopt technologies because of trends."
+      },
+      "p3": {
+        "title": "Simplicity by Default",
+        "desc": "The simplest solution that works is often the best. Complexity is only justified when the problem demands it."
+      },
+      "p4": {
+        "title": "Autonomy Over Dependence",
+        "desc": "I build systems with fallbacks and graceful degradation when they depend on external services."
+      },
+      "p5": {
+        "title": "Measure and Iterate",
+        "desc": "If impact cannot be measured, the scope needs another look. Every project needs metrics: time saved, processes automated, errors reduced."
+      },
+      "p6": {
+        "title": "Security Is Not Optional",
+        "desc": "Authentication, validation, data sanitization — they're not features. They're basic requirements for any system."
+      },
+      "p7": {
+        "title": "Documentation as Product",
+        "desc": "Every technical decision, every trade-off, every architecture choice is documented. Not for bureaucracy — for the next person who needs to understand the system."
+      },
+      "p8": {
+        "title": "Tests as Guarantee",
+        "desc": "Tests are not overhead; they are confidence. A system without tests carries risk that is hard to see."
+      },
+      "p9": {
+        "title": "Performance with Purpose",
+        "desc": "I optimize when the problem demands it. A dashboard that loads in 200ms is better than one that loads in 2s — but only if someone needs that speed."
+      },
+      "p10": {
+        "title": "Continuous Evolution",
+        "desc": "No project is truly finished. Every solution has next steps, possible improvements, and trade-offs that can be re-evaluated."
+      },
+      "p11": {
+        "title": "Resolution and Decision",
+        "desc": "Engineers solve problems. When a decision can be made with the available context, I make it and move forward responsibly."
+      },
+      "p12": {
+        "title": "Ownership Over Outcome",
+        "desc": "The important question is whether the solution works. I take responsibility for outcomes, not only assigned tasks."
+      }
+    },
+    "howIBuild": {
+      "title": "How I Build Software",
+      "subtitle": "A real step-by-step of my engineering process.",
+      "steps": {
+        "s1": {
+          "title": "I Understand the Problem",
+          "desc": "Before any solution, I understand: who has the problem? How often? What's the cost of not solving it? What's been tried before?"
+        },
+        "s2": {
+          "title": "I Research Existing Solutions",
+          "desc": "I check if the problem has been solved before. I don't reinvent the wheel — but I also don't copy solutions that don't fit the context."
+        },
+        "s3": {
+          "title": "I Design the Architecture",
+          "desc": "Modules, interfaces, data flow, integration points. I write before coding. A 15-minute diagram saves 15 hours of rework."
+        },
+        "s4": {
+          "title": "I Define the Interfaces",
+          "desc": "APIs, data contracts, input/output formats. Everything typed. Everything validated. If something can be invalid, I handle it before it reaches the domain."
+        },
+        "s5": {
+          "title": "I Implement in Layers",
+          "desc": "Domain first, infrastructure later, integration last. I don't mix responsibilities. Each layer does one thing and does it well."
+        },
+        "s6": {
+          "title": "I Test Each Layer",
+          "desc": "Unit tests on domain, integration tests on adapters, E2E on critical flows. If I don't test it, I don't trust it."
+        },
+        "s7": {
+          "title": "I Validate with Real Data",
+          "desc": "Nothing replaces testing with real data. Synthetic data hides problems that only appear in production."
+        },
+        "s8": {
+          "title": "I Automate the Deploy",
+          "desc": "CI/CD, containerization, environment variables. Deploy must be automatic, reproducible, and secure."
+        },
+        "s9": {
+          "title": "I Document the Decisions",
+          "desc": "Why did I choose X and not Y? What's the trade-off? What changes if I scale? I document decisions, not implementation."
+        },
+        "s10": {
+          "title": "I Measure and Iterate",
+          "desc": "After launching, I measure the impact. Time saved, errors eliminated, processes automated. If I don't measure, I don't know if it worked."
+        }
+      }
+    },
+    "behindArchitecture": {
+      "title": "Behind the Architecture",
+      "subtitle": "The technologies I use, why I use them, and what I'd trade.",
+      "technologies": {
+        "python": {
+          "name": "Python",
+          "why": "Reference language for automation, data, and fast APIs. FastAPI is the framework I use most for backends.",
+          "tradeoff": "Raw performance is lower than Go or Rust. For most cases, this doesn't matter. When it does, I optimize."
+        },
+        "nodejs": {
+          "name": "Node.js",
+          "why": "npm ecosystem, HTTP APIs, React integration. I use it when I need performance in concurrent I/O.",
+          "tradeoff": "Single-threaded. For CPU-bound processing, I use Python with multiprocessing or separate workers."
+        },
+        "nextjs": {
+          "name": "Next.js",
+          "why": "Server Components, SSR, automatic routes. Complete framework for web portals with SEO and performance.",
+          "tradeoff": "Complexity for simple apps. If the project is just an SPA, I use plain React with Vite."
+        },
+        "react": {
+          "name": "React",
+          "why": "Reusable components, mature ecosystem, TypeScript typing. The library I know best.",
+          "tradeoff": "Bundle size. For static sites, I consider Astro. For simple apps, Preact."
+        },
+        "postgresql": {
+          "name": "PostgreSQL",
+          "why": "Robust database, ACID, extensions, performance. For relational data, it's always my first choice.",
+          "tradeoff": "Overhead for rapid prototypes. For that, I use SQLite."
+        },
+        "docker": {
+          "name": "Docker",
+          "why": "Reproducibility, isolation, deployment. Every system I build runs in a container.",
+          "tradeoff": "Setup complexity. For local prototypes, I use the runtime directly."
+        },
+        "fastapi": {
+          "name": "FastAPI",
+          "why": "Fast APIs, automatic validation, generated docs. The Python framework I use most for backends.",
+          "tradeoff": "Lower maturity than Django. For apps with heavy business logic, I consider Django."
+        }
+      }
+    },
+    "lessonsLearned": {
+      "title": "Lessons Learned",
+      "subtitle": "What each project taught me about software engineering."
+    }
+  }
+}

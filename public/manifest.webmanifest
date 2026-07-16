@@ -1,0 +1,16 @@
+{
+  "name": "Caio Enrique | Portfolio",
+  "short_name": "caio.dev",
+  "description": "Full-Stack Developer & Enterprise Automation. Portfolio of modern web projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#818cf8",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

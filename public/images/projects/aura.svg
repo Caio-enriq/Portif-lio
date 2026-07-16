@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="34" x2="730" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121a1d"/>
+      <stop offset="1" stop-color="#201c25"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="92" y1="64" x2="708" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151f23"/>
+      <stop offset="1" stop-color="#0f141d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="158" y1="120" x2="650" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a7f3d0"/>
+      <stop offset=".48" stop-color="#f9a8d4"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="454" y1="136" x2="664" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f9a8d4"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#020617" flood-opacity=".36"/>
+    </filter>
+    <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#fce7f3" opacity=".08"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" rx="28" fill="url(#bg)"/>
+  <rect width="800" height="450" rx="28" fill="url(#grain)"/>
+  <circle cx="206" cy="112" r="134" fill="#a7f3d0" opacity=".08"/>
+  <circle cx="662" cy="334" r="162" fill="#f9a8d4" opacity=".08"/>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="58" width="648" height="334" rx="28" fill="url(#panel)" stroke="#33434a"/>
+    <rect x="76" y="58" width="648" height="44" rx="28" fill="#182228"/>
+    <path d="M76 99h648" stroke="#2b3941"/>
+    <circle cx="108" cy="80" r="5" fill="#a7f3d0"/>
+    <circle cx="128" cy="80" r="5" fill="#f9a8d4"/>
+    <circle cx="148" cy="80" r="5" fill="#fbbf24"/>
+    <rect x="570" y="72" width="112" height="16" rx="8" fill="#223039"/>
+
+    <rect x="106" y="128" width="250" height="218" rx="24" fill="#101820" stroke="#33434a"/>
+    <text x="132" y="164" fill="#f5f5f4" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800">Studio schedule</text>
+    <rect x="132" y="190" width="86" height="36" rx="14" fill="#18242a" stroke="#3d4d55"/>
+    <text x="154" y="213" fill="#d1fae5" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">09:00</text>
+    <rect x="234" y="190" width="86" height="36" rx="14" fill="#18242a" stroke="#3d4d55"/>
+    <text x="256" y="213" fill="#fde68a" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">11:30</text>
+    <rect x="132" y="246" width="188" height="54" rx="18" fill="#151f25" stroke="#41535c"/>
+    <circle cx="160" cy="273" r="13" fill="#1f2c31" stroke="#a7f3d0" stroke-width="3"/>
+    <path d="M182 264h88M182 284h54" stroke="#71828a" stroke-width="6" stroke-linecap="round"/>
+    <rect x="132" y="318" width="126" height="10" rx="5" fill="#2b3941"/>
+    <rect x="132" y="318" width="82" height="10" rx="5" fill="url(#accent)"/>
+
+    <rect x="402" y="128" width="292" height="218" rx="24" fill="#101820" stroke="#33434a"/>
+    <text x="428" y="164" fill="#f5f5f4" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="800">Admin overview</text>
+    <rect x="428" y="190" width="88" height="70" rx="18" fill="#151f25" stroke="#3d4d55"/>
+    <text x="450" y="218" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="11">classes</text>
+    <text x="450" y="244" fill="#d1fae5" font-family="Inter, system-ui, sans-serif" font-size="25" font-weight="800">18</text>
+    <rect x="536" y="190" width="120" height="70" rx="18" fill="#151f25" stroke="#3d4d55"/>
+    <text x="560" y="218" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="11">occupancy</text>
+    <circle cx="590" cy="242" r="17" fill="none" stroke="#2b3941" stroke-width="7"/>
+    <circle cx="590" cy="242" r="17" fill="none" stroke="url(#warm)" stroke-width="7" stroke-linecap="round" stroke-dasharray="78 107" transform="rotate(-90 590 242)"/>
+    <path d="M626 242h16" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M430 316C462 272 494 298 524 266C558 230 598 300 636 256C650 240 660 232 670 228" stroke="url(#accent)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M430 326h224" stroke="#2b3941" stroke-width="2"/>
+    <circle cx="524" cy="266" r="6" fill="#fff7ed" stroke="#f9a8d4" stroke-width="3"/>
+
+    <path d="M356 238h46" stroke="#3d4d55" stroke-width="4" stroke-linecap="round"/>
+    <path d="M392 228l12 10-12 10" stroke="#71828a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="96" y="374" width="188" height="28" rx="14" fill="#101820" stroke="#33434a"/>
+  <text x="118" y="393" fill="#f5f5f4" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700">Aura Pilates</text>
+  <rect x="492" y="374" width="212" height="28" rx="14" fill="#101820" stroke="#33434a"/>
+  <text x="516" y="393" fill="#8b9aa0" font-family="Inter, system-ui, sans-serif" font-size="11">booking + admin + premium UX</text>
+</svg>
