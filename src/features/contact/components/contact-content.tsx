@@ -26,7 +26,7 @@ type FormStatus = "idle" | "sending" | "success" | "error";
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/caio-enrique-/",
+    url: "https://www.linkedin.com/in/caioe/",
     icon: Globe,
     color: "from-blue-500 to-blue-600",
   },

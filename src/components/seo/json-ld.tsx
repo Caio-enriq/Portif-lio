@@ -14,7 +14,7 @@ export function PersonJsonLd({ locale }: PersonJsonLdProps) {
       "@type": "Organization",
       name: "SOSdocs",
     },
-    sameAs: ["https://github.com/Caio-enriq", "https://linkedin.com/in/caio-enrique-/"],
+    sameAs: ["https://github.com/Caio-enriq", "https://www.linkedin.com/in/caioe/"],
     email: "caio.desenvolvedor2416@gmail.com",
     address: {
       "@type": "PostalAddress",

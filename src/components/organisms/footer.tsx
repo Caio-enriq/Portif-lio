@@ -20,7 +20,7 @@ export function Footer() {
     ],
     social: [
       { href: "https://github.com/Caio-enriq", label: "GitHub" },
-      { href: "https://linkedin.com/in/caio-enrique-/", label: "LinkedIn" },
+      { href: "https://www.linkedin.com/in/caioe/", label: "LinkedIn" },
     ],
   };
 
