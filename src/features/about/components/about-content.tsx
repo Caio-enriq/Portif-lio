@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { revealOnView, fadeUp } from "@/lib/motion";
 import { resumeData } from "@/data/resume";
 import { GitHubActivity } from "@/features/about/components/github-activity";
 import { LocationGlobe } from "@/features/about/components/location-globe";
@@ -82,17 +83,25 @@ export function AboutContent() {
 
   return (
     <div className="relative mx-auto max-w-6xl px-6 py-20">
-      {/* Page-specific background */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="bg-success/5 absolute -top-32 -right-32 h-[500px] w-[500px] rounded-full blur-3xl" />
-        <div className="absolute -bottom-32 -left-32 h-[400px] w-[400px] rounded-full bg-emerald-500/5 blur-3xl" />
+      {/* Page-specific background — faded at the edges so it dissolves into
+          the page instead of ending in a hard rectangle. */}
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        style={{
+          maskImage: "linear-gradient(to bottom, transparent, black 8%, black 92%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent, black 8%, black 92%, transparent)",
+        }}
+      >
+        <div className="aurora-blob bg-success/8 absolute -top-32 -right-32 h-[500px] w-[500px] animate-[aurora-drift_24s_ease-in-out_infinite]" />
+        <div className="aurora-blob absolute -bottom-32 -left-32 h-[400px] w-[400px] animate-[aurora-drift-3_28s_ease-in-out_infinite] bg-emerald-500/8" />
       </div>
 
       {/* Hero Banner with Photo */}
       <motion.div
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
+        initial="hidden"
+        animate="visible"
+        variants={fadeUp}
         className="border-success/20 from-success-muted via-background to-primary/5 mb-12 rounded-xl border bg-gradient-to-r p-8"
       >
         <div className="flex flex-col items-center gap-8 md:flex-row">
@@ -107,10 +116,11 @@ export function AboutContent() {
             />
           </div>
           <div className="text-center md:text-left">
-            <p className="text-success mb-2 text-sm font-semibold tracking-wider uppercase">
+            <p className="text-success mb-2 flex items-center justify-center gap-2 text-sm font-semibold tracking-wider uppercase md:justify-start">
+              <span className="status-dot bg-success inline-block h-1.5 w-1.5 rounded-full" />
               {t("banner")}
             </p>
-            <h1 className="mb-3 text-4xl font-bold tracking-tight">{t("title")}</h1>
+            <h1 className="text-gradient mb-3 text-4xl font-bold tracking-tight">{t("title")}</h1>
             <p className="text-muted-foreground text-lg">{t("subtitle")}</p>
           </div>
         </div>
@@ -120,13 +130,7 @@ export function AboutContent() {
       <LocationGlobe isEn={isEn} />
 
       {/* Journey - 3 Acts */}
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mb-12"
-      >
+      <motion.section {...revealOnView} variants={fadeUp} className="mb-12">
         <h2 className="mb-8 text-center text-2xl font-bold">
           {isEn ? "My journey" : "Minha trajetória"}
         </h2>
@@ -139,7 +143,10 @@ export function AboutContent() {
               transition={{ delay: i * 0.15, duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Card className="border-border bg-card/50 hover:border-primary/50 hover:shadow-primary/5 h-full backdrop-blur-sm transition-all hover:shadow-lg">
+              <Card
+                variant="glass"
+                className="hover:border-primary/50 hover:shadow-primary/5 h-full transition-all hover:shadow-lg"
+              >
                 <CardContent className="p-6">
                   <div
                     className={`mb-4 flex h-12 w-12 items-center justify-center rounded-lg ${act.bg}`}
@@ -162,13 +169,8 @@ export function AboutContent() {
         {/* Left Column - Story & Info */}
         <div className="space-y-8 lg:col-span-2">
           {/* Story */}
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <Card className="border-border bg-card/50 backdrop-blur-sm">
+          <motion.section {...revealOnView} variants={fadeUp}>
+            <Card variant="glass">
               <CardContent className="p-6">
                 <h2 className="mb-4 flex items-center gap-2 text-xl font-bold">
                   <Target className="text-primary h-5 w-5" />
@@ -184,12 +186,7 @@ export function AboutContent() {
           </motion.section>
 
           {/* Experience Timeline */}
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <motion.section {...revealOnView} variants={fadeUp}>
             <h2 className="mb-6 flex items-center gap-2 text-2xl font-bold">
               <Briefcase className="text-primary h-5 w-5" />
               {t("experience")}
@@ -206,7 +203,10 @@ export function AboutContent() {
                   className="relative"
                 >
                   <div className="border-primary bg-background absolute top-1 -left-5 h-3 w-3 rounded-full border-2" />
-                  <Card className="border-border bg-card/50 hover:border-primary/50 hover:shadow-primary/5 backdrop-blur-sm transition-all hover:shadow-lg">
+                  <Card
+                    variant="glass"
+                    className="hover:border-primary/50 hover:shadow-primary/5 transition-all hover:shadow-lg"
+                  >
                     <CardContent className="p-5">
                       <div className="mb-2 flex flex-wrap items-center gap-2">
                         <Badge variant="secondary">{exp.period}</Badge>
@@ -280,7 +280,7 @@ export function AboutContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <Card className="border-border bg-card/50">
+            <Card variant="glass">
               <CardContent className="p-5">
                 <h3 className="mb-4 flex items-center gap-2 font-bold">
                   <GraduationCap className="text-primary h-4 w-4" />
@@ -305,7 +305,7 @@ export function AboutContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            <Card className="border-border bg-card/50">
+            <Card variant="glass">
               <CardContent className="p-5">
                 <h3 className="mb-4 flex items-center gap-2 font-bold">
                   <Users className="text-primary h-4 w-4" />
@@ -332,7 +332,7 @@ export function AboutContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <Card className="border-border bg-card/50">
+            <Card variant="glass">
               <CardContent className="p-5">
                 <h3 className="mb-4 flex items-center gap-2 font-bold">
                   <Award className="text-primary h-4 w-4" />
@@ -364,7 +364,7 @@ export function AboutContent() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            <Card className="border-border bg-card/50">
+            <Card variant="glass">
               <CardContent className="p-5">
                 <h3 className="mb-4 flex items-center gap-2 font-bold">
                   <Globe className="text-primary h-4 w-4" />

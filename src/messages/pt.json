@@ -17,6 +17,12 @@
     "home": "Ir para o início",
     "back": "Voltar"
   },
+  "error": {
+    "title": "Algo deu errado",
+    "description": "Ocorreu um erro inesperado ao carregar esta página. Você pode tentar novamente ou voltar para o início.",
+    "retry": "Tentar novamente",
+    "home": "Ir para o início"
+  },
   "hero": {
     "nameLine": "Caio Enrique",
     "availability": "Disponível para oportunidades",

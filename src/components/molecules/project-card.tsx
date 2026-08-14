@@ -42,7 +42,7 @@ export function ProjectCard({ project, className, priority = false }: ProjectCar
     <Link href={`/projetos/${project.slug}`} className="block">
       <Card
         className={cn(
-          "group border-border bg-card hover:border-accent/40 relative overflow-hidden transition-all hover:shadow-[0_0_30px_rgb(var(--glow-rgb)/0.08)]",
+          "group border-border bg-card hover:border-accent/40 shimmer-sweep relative overflow-hidden transition-all hover:shadow-[0_0_30px_rgb(var(--glow-rgb)/0.08)]",
           className
         )}
       >

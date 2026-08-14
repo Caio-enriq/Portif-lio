@@ -17,6 +17,12 @@
     "home": "Go Home",
     "back": "Go Back"
   },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred while loading this page. You can try again or go back home.",
+    "retry": "Try Again",
+    "home": "Go Home"
+  },
   "hero": {
     "nameLine": "Caio Enrique",
     "availability": "Open to opportunities",

@@ -4,9 +4,12 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button";
 import { ProjectCard } from "@/components/molecules/project-card";
 import { projects } from "@/data/projects";
 import { cn } from "@/lib/utils";
+import { fadeUp, revealOnView } from "@/lib/motion";
 import { ExternalLink, Star, Filter } from "lucide-react";
 
 const categories = [
@@ -27,10 +30,17 @@ export function ProjectsContent() {
 
   return (
     <div className="relative mx-auto max-w-6xl px-6 py-20">
-      {/* Page-specific background */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 -left-32 h-[500px] w-[500px] rounded-full bg-purple-500/5 blur-3xl" />
-        <div className="bg-primary/5 absolute -right-32 bottom-1/4 h-[400px] w-[400px] rounded-full blur-3xl" />
+      {/* Page-specific background — soft aurora wash, faded at the edges so it
+          dissolves into the page instead of ending in a hard rectangle. */}
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        style={{
+          maskImage: "linear-gradient(to bottom, black, transparent)",
+          WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
+        }}
+      >
+        <div className="aurora-blob absolute top-1/4 -left-32 h-[500px] w-[500px] animate-[aurora-drift_22s_ease-in-out_infinite] bg-purple-500/8" />
+        <div className="aurora-blob bg-primary/8 absolute -right-32 bottom-1/4 h-[400px] w-[400px] animate-[aurora-drift-2_26s_ease-in-out_infinite]" />
         <div
           className="absolute inset-0 opacity-[0.02]"
           style={{
@@ -40,46 +50,45 @@ export function ProjectsContent() {
         />
       </div>
       {/* Hero Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="mb-12"
-      >
+      <motion.div {...revealOnView} variants={fadeUp} className="mb-12">
         <div className="mb-4 flex items-center gap-2">
           <Star className="text-primary h-5 w-5" />
           <span className="text-primary text-sm font-semibold tracking-wider uppercase">
             {t("projects.portfolioLabel")}
           </span>
         </div>
-        <h1 className="mb-4 text-4xl font-bold tracking-tight">{t("projects.title")}</h1>
+        <h1 className="text-gradient mb-4 text-4xl font-bold tracking-tight">
+          {t("projects.title")}
+        </h1>
         <p className="text-muted-foreground max-w-2xl text-lg">{t("projects.subtitle")}</p>
       </motion.div>
 
       {/* Featured Projects Banner */}
       {featured.length > 0 && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
-          className="border-primary/20 from-primary-muted/30 via-background to-background mb-12 rounded-2xl border bg-gradient-to-br p-6"
-        >
-          <h2 className="mb-4 flex items-center gap-2 text-lg font-bold">
-            <Star className="text-primary h-4 w-4" />
-            {t("projects.featured")}
-          </h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            {featured.slice(0, 2).map((project, i) => (
-              <motion.div
-                key={project.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 + i * 0.1, duration: 0.4 }}
-              >
-                <ProjectCard project={project} priority={i < 2} />
-              </motion.div>
-            ))}
-          </div>
+        <motion.div {...revealOnView} variants={fadeUp} className="mb-12">
+          <Card
+            variant="glass"
+            className="border-primary/20 from-primary-muted/30 via-background to-background gap-0 bg-gradient-to-br"
+          >
+            <CardContent className="p-6">
+              <h2 className="mb-4 flex items-center gap-2 text-lg font-bold">
+                <Star className="text-primary h-4 w-4" />
+                {t("projects.featured")}
+              </h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                {featured.slice(0, 2).map((project, i) => (
+                  <motion.div
+                    key={project.id}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.2 + i * 0.1, duration: 0.4 }}
+                  >
+                    <ProjectCard project={project} priority={i < 2} />
+                  </motion.div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </motion.div>
       )}
 
@@ -131,24 +140,22 @@ export function ProjectsContent() {
       )}
 
       {/* GitHub CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="border-border bg-card/50 mt-16 rounded-2xl border p-8 text-center"
-      >
-        <h3 className="mb-2 text-xl font-bold">{t("projects.githubTitle")}</h3>
-        <p className="text-muted-foreground mb-6">{t("projects.githubDesc")}</p>
-        <a
-          href="https://github.com/Caio-enriq"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-primary/20 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium transition-all hover:shadow-lg"
-        >
-          <ExternalLink className="h-4 w-4" />
-          {t("projects.viewAll")}
-        </a>
+      <motion.div {...revealOnView} variants={fadeUp} className="mt-16">
+        <Card variant="glass" className="text-center">
+          <CardContent className="p-8">
+            <h3 className="mb-2 text-xl font-bold">{t("projects.githubTitle")}</h3>
+            <p className="text-muted-foreground mb-6">{t("projects.githubDesc")}</p>
+            <a
+              href="https://github.com/Caio-enriq"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ variant: "gradient", size: "lg" }))}
+            >
+              <ExternalLink className="h-4 w-4" />
+              {t("projects.viewAll")}
+            </a>
+          </CardContent>
+        </Card>
       </motion.div>
     </div>
   );

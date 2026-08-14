@@ -35,6 +35,7 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-primary-muted: var(--primary-muted);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -63,6 +64,7 @@
   --popover-foreground: #fafafa;
   --primary: #818cf8;
   --primary-foreground: #09090b;
+  --primary-muted: #4338ca;
   --secondary: #18181b;
   --secondary-foreground: #fafafa;
   --muted: #18181b;
@@ -83,6 +85,9 @@
   --success-muted: rgba(52, 211, 153, 0.1);
   --warning: #fbbf24;
   --error: #f87171;
+  /* Glow tracks the dark primary/accent (#818cf8 = 129 140 248), matching the
+     radial-orbital-timeline glow. `.light` below overrides this. */
+  --glow-rgb: 129 140 248;
 }
 
 /* ── LIGHT MODE ── */
@@ -95,6 +100,7 @@
   --popover-foreground: #09090b;
   --primary: #4f46e5;
   --primary-foreground: #ffffff;
+  --primary-muted: #6366f1;
   --secondary: #f4f4f5;
   --secondary-foreground: #09090b;
   --muted: #f4f4f5;
@@ -180,12 +186,6 @@
 }
 
 /* ── Design-system layer: glassmorphism + aurora ── */
-
-/* Single tuning point for the indigo glow used across glass surfaces.
-   Matches the existing radial-orbital-timeline glow (#818cf8 = 129 140 248). */
-:root {
-  --glow-rgb: 129 140 248;
-}
 
 /* ── Keyframes ── */
 @keyframes aurora-drift {
